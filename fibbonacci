@@ -1,0 +1,18 @@
+num=int(input("value"))
+print(0)
+print(1)
+count=2
+def fib(prev1,prev2):
+     global count
+     if(count <=num):
+        new=prev1+prev2
+        print(new)
+        prev1=prev2
+        prev2=new
+        count+=1
+        fib(prev1,prev2)  
+     else:
+        return 
+    
+fib(0,1)     
+
